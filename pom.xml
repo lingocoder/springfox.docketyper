@@ -1,11 +1,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>com.lingocoder</groupId>
 	<artifactId>springfox.docketyper</artifactId>
 	<version>0.0.0</version>
 	<packaging>jar</packaging>
-	<name>springfox.docketyper</name>
-	<url>http://maven.apache.org</url>
+	
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>A remedy for the headache of using SpringFox in JPMS-structured projects.</description>
+	<url>http://lingocoder.com/springfox.docketyper</url>
+	
+	<licenses>
+		<license>
+			<name>Creative Commons Attribution-NoDerivatives 4.0 International Public License</name>
+			<url>https://creativecommons.org/licenses/by-nd/4.0/</url>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<name>Lingo Coder</name>
+			<email>plugins@lingocoder.com</email>
+			<organization>lingocoder.com</organization>
+			<organizationUrl>http://lingocoder.com</organizationUrl>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:git://github.com/lingocoder/springfox.docketyper.git</connection>
+		<developerConnection>scm:git:ssh://github.com:lingocoder/springfox.docketyper.git</developerConnection>
+		<url>https://github.com/lingocoder/springfox.docketyper/tree/master</url>
+	</scm>
+	
 	<properties>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
@@ -13,6 +39,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springfox-version>3.0.0</springfox-version>
 	</properties>
+    
 	<build>
 	    <plugins>	    
 			<plugin>
